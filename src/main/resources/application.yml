@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+
+
+---   
+spring:
+  profiles : dev
+
+caffeine-cache:
+  item:
+  - cache-name: productUpDownCount
+  - cache-name: productList
+    expire-seconds: 600
+  - cache-name: productSize
+    expire-seconds: 10800
