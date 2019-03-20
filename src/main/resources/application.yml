@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: dev
+  #指定缓存类型为caffeine cache ，本地缓存
+  cache:
+      type: CAFFEINE
 
 
 ---   
